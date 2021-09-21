@@ -1,0 +1,22 @@
+{
+   "type":"record",
+   "name":"Message",
+   "namespace":"cz.wesecon",
+   "fields":[
+      {
+         "name":"name",
+         "type":"string"
+      },
+      {
+         "name":"type",
+         "type":[
+            "null",
+            "string"
+         ]
+      },
+      {
+         "name":"amount",
+         "type":"long"
+      }
+   ]
+}
