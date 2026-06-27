@@ -3,7 +3,7 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package cz.wesecon;
+package cz.kafka;
 
 import org.apache.avro.generic.GenericArray;
 import org.apache.avro.specific.SpecificData;
@@ -14,8 +14,8 @@ import org.apache.avro.message.SchemaStore;
 
 @org.apache.avro.specific.AvroGenerated
 public class Message extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -11789594960074331L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Message\",\"namespace\":\"cz.wesecon\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"type\",\"type\":[\"null\",\"string\"]},{\"name\":\"amount\",\"type\":\"long\"}]}");
+  private static final long serialVersionUID = -5764872917192683371L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Message\",\"namespace\":\"cz.kafka\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"type\",\"type\":[\"null\",\"string\"]},{\"name\":\"amount\",\"type\":\"long\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
@@ -172,8 +172,8 @@ public class Message extends org.apache.avro.specific.SpecificRecordBase impleme
    * Creates a new Message RecordBuilder.
    * @return A new Message RecordBuilder
    */
-  public static cz.wesecon.Message.Builder newBuilder() {
-    return new cz.wesecon.Message.Builder();
+  public static cz.kafka.Message.Builder newBuilder() {
+    return new cz.kafka.Message.Builder();
   }
 
   /**
@@ -181,11 +181,11 @@ public class Message extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param other The existing builder to copy.
    * @return A new Message RecordBuilder
    */
-  public static cz.wesecon.Message.Builder newBuilder(cz.wesecon.Message.Builder other) {
+  public static cz.kafka.Message.Builder newBuilder(cz.kafka.Message.Builder other) {
     if (other == null) {
-      return new cz.wesecon.Message.Builder();
+      return new cz.kafka.Message.Builder();
     } else {
-      return new cz.wesecon.Message.Builder(other);
+      return new cz.kafka.Message.Builder(other);
     }
   }
 
@@ -194,11 +194,11 @@ public class Message extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param other The existing instance to copy.
    * @return A new Message RecordBuilder
    */
-  public static cz.wesecon.Message.Builder newBuilder(cz.wesecon.Message other) {
+  public static cz.kafka.Message.Builder newBuilder(cz.kafka.Message other) {
     if (other == null) {
-      return new cz.wesecon.Message.Builder();
+      return new cz.kafka.Message.Builder();
     } else {
-      return new cz.wesecon.Message.Builder(other);
+      return new cz.kafka.Message.Builder(other);
     }
   }
 
@@ -222,7 +222,7 @@ public class Message extends org.apache.avro.specific.SpecificRecordBase impleme
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(cz.wesecon.Message.Builder other) {
+    private Builder(cz.kafka.Message.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.name)) {
         this.name = data().deepCopy(fields()[0].schema(), other.name);
@@ -242,7 +242,7 @@ public class Message extends org.apache.avro.specific.SpecificRecordBase impleme
      * Creates a Builder by copying an existing Message instance
      * @param other The existing instance to copy.
      */
-    private Builder(cz.wesecon.Message other) {
+    private Builder(cz.kafka.Message other) {
       super(SCHEMA$);
       if (isValidValue(fields()[0], other.name)) {
         this.name = data().deepCopy(fields()[0].schema(), other.name);
@@ -272,7 +272,7 @@ public class Message extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'name'.
       * @return This builder.
       */
-    public cz.wesecon.Message.Builder setName(java.lang.CharSequence value) {
+    public cz.kafka.Message.Builder setName(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.name = value;
       fieldSetFlags()[0] = true;
@@ -292,7 +292,7 @@ public class Message extends org.apache.avro.specific.SpecificRecordBase impleme
       * Clears the value of the 'name' field.
       * @return This builder.
       */
-    public cz.wesecon.Message.Builder clearName() {
+    public cz.kafka.Message.Builder clearName() {
       name = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -312,7 +312,7 @@ public class Message extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'type'.
       * @return This builder.
       */
-    public cz.wesecon.Message.Builder setType(java.lang.CharSequence value) {
+    public cz.kafka.Message.Builder setType(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.type = value;
       fieldSetFlags()[1] = true;
@@ -332,7 +332,7 @@ public class Message extends org.apache.avro.specific.SpecificRecordBase impleme
       * Clears the value of the 'type' field.
       * @return This builder.
       */
-    public cz.wesecon.Message.Builder clearType() {
+    public cz.kafka.Message.Builder clearType() {
       type = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -352,7 +352,7 @@ public class Message extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'amount'.
       * @return This builder.
       */
-    public cz.wesecon.Message.Builder setAmount(long value) {
+    public cz.kafka.Message.Builder setAmount(long value) {
       validate(fields()[2], value);
       this.amount = value;
       fieldSetFlags()[2] = true;
@@ -372,7 +372,7 @@ public class Message extends org.apache.avro.specific.SpecificRecordBase impleme
       * Clears the value of the 'amount' field.
       * @return This builder.
       */
-    public cz.wesecon.Message.Builder clearAmount() {
+    public cz.kafka.Message.Builder clearAmount() {
       fieldSetFlags()[2] = false;
       return this;
     }
